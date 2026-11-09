@@ -1,0 +1,20 @@
+{
+  "name": "photo-editorial-skills",
+  "displayName": "Photo Editorial Skills",
+  "version": "0.1.0",
+  "description": "Editorial layout skills for photographic documents in Typst: dossier, portfolio, photobook and exhibition materials.",
+  "icon": "./assets/icon.png",
+  "author": {
+    "name": "Jesús Ramos Martín"
+  },
+  "homepage": "https://github.com/jramos681-prog/photo-editorial-skills",
+  "repository": "https://github.com/jramos681-prog/photo-editorial-skills",
+  "license": "MIT AND CC-BY-4.0 AND Apache-2.0",
+  "keywords": [
+    "typst",
+    "editorial-design",
+    "photography",
+    "layout",
+    "pdf"
+  ]
+}

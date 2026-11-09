@@ -1,0 +1,127 @@
+Third-party notices
+===================
+
+This repository distributes a skill whose text contains material derived from
+three skills published by other authors. This notice maps every repository file
+that contains derived material to its upstream source, license, and copyright
+notice. Apache License 2.0, section 4(b), requires each affected file to carry
+a prominent notice stating that it was modified. The MIT copyright and
+permission notice is included in `LICENSES/MIT-better-typography.txt`.
+
+The three upstream skills were copied in November 2026 as shallow clones of
+their `main` branch; the commits below are the `HEAD` of those clones at that
+date.
+
+| Upstream skill | Repository | Commit | License | Copyright notice |
+| --- | --- | --- | --- | --- |
+| `impeccable` | https://github.com/pbakaus/impeccable | `9c3808ba441337fce03b3e34aa06efc434503162` | Apache License 2.0 | `Copyright 2025 Paul Bakaus` |
+| `better-typography` | https://github.com/jakubkrehel/skills | `60bf140e43c98b248e6594487384ec967e89d98a` | MIT | `Copyright (c) 2026 Jakub Krehel` |
+| `canvas-design` | https://github.com/anthropics/skills | `ca45fc496a3436251f191354091d557da31c15b5` | Apache License 2.0 | `Copyright 2026 Anthropic, PBC.` |
+
+Modified files
+--------------
+
+Each file listed below is a modified file: the derived material was translated
+into Spanish and adapted to the editorial method of this collection, and the
+text around it is original to the collection. The upstream file names in each
+entry identify where the derived passages come from.
+
+### `skills/maquetacion-editorial/references/antipatrones.md`
+
+Derived from `impeccable` and from `better-typography`. Modified: translated
+into Spanish and rewritten.
+
+From `impeccable` (`reference/craft-floor.md`, `reference/new-work.md`,
+`reference/typeset.md`, `reference/layout.md`) the file keeps, in translated
+and adapted form, the catalogue of design tics and part of the review
+vocabulary: the cluster of a warm cream ground with a high-contrast serif and
+a terracotta accent; same-size cards as the page structure; the kicker above a
+heading; section numbers 01 / 02 / 03; hard offset shadows; monospace as a
+costume for "technical"; Unicode glyphs and emoji standing in for an icon
+system; the split between reading and operating surfaces and persuasion and
+experience surfaces; and the squint test.
+
+From `better-typography` (`SKILL.md`,
+`wrapping-and-punctuation.md`) the file keeps the five-column incident report,
+a three-level severity scale and the rule that a blocking verdict stands
+while a high-severity finding remains. It also adapts the character-based
+line-measure checks and the guidance on typographic punctuation, including
+non-breaking spaces.
+
+### `skills/maquetacion-editorial/references/tipografia.md`
+
+Derived from `better-typography` (`SKILL.md`,
+`wrapping-and-punctuation.md`). Modified: translated into Spanish and adapted.
+The file keeps the sentence that screen designs rarely use more than three
+fonts, and adapts the character-based line-measure guidance, typographic marks
+instead of keyboard substitutes, and the single-character ellipsis.
+
+### `skills/maquetacion-editorial/references/programa.md`
+
+Derived from `canvas-design` (`SKILL.md`). Modified: translated into Spanish
+and adapted. The file keeps the requirement that nothing overlaps and nothing
+falls outside the margins, with breathing room between elements; the warning
+against disguising weaknesses by adding frames, grounds or ornament at the end
+instead of refining what exists; and the idea of writing a short statement of
+concept before composing.
+
+### `skills/maquetacion-editorial/SKILL.md`
+
+Derived from `better-typography` (`SKILL.md`). Modified: translated into
+Spanish and adapted. The five columns of the incident report in step 8,
+`Gravedad | Dónde | Antes | Después | Por qué`, are a translation of the
+reporting table of that skill.
+
+Licensing of the derived files
+------------------------------
+
+The derived passages remain available under their upstream licenses: Apache
+License 2.0 for `impeccable` and `canvas-design`, and MIT for
+`better-typography`. The collection's original contributions to the affected
+files are licensed under CC BY 4.0 (see `LICENSE-docs`). Apache License 2.0,
+section 4, and the MIT license permit distribution of the adaptations when
+their terms are met. A recipient may rely on the upstream license for each
+derived passage.
+
+License texts
+-------------
+
+- `LICENSES/Apache-2.0.txt` is a verbatim copy of `canvas-design`'s
+  `LICENSE.txt`: the complete Apache License 2.0, including the appendix on
+  how to apply it. `impeccable` is distributed under the same license text;
+  its copyright notice is the one in the table above.
+- `LICENSES/MIT-better-typography.txt` is a verbatim copy of
+  `better-typography`'s `LICENSE-upstream.txt`.
+
+Other third-party material
+--------------------------
+
+`skills/maquetacion-editorial/references/antipatrones.md` attributes to
+Antoine de Saint-Exupéry a short sentence on finishing a page by removing
+rather than adding. That sentence is a quotation from a third party, not
+material derived from any of the skills above, and it is excluded from the
+CC BY 4.0 license of the documentation.
+
+Dependencies not included
+-------------------------
+
+The repository does not include these dependencies. Each one is installed
+separately by the user and is governed by its own license.
+
+| Dependency | Used by | License | Source |
+| --- | --- | --- | --- |
+| PyMuPDF | `skills/maquetacion-editorial/scripts/control_pdf.py`, `skills/maquetacion-editorial/scripts/hoja_contactos.py` | GNU AGPL 3.0, or a commercial license from Artifex | https://pymupdf.readthedocs.io/en/latest/about.html |
+| Pillow | `skills/maquetacion-editorial/scripts/hoja_contactos.py` | MIT-CMU | https://github.com/python-pillow/Pillow/blob/main/LICENSE |
+| fontTools | `skills/maquetacion-editorial/scripts/catalogo_fuentes.py`, `control_pdf.py`, `hoja_contactos.py` | MIT | https://github.com/fonttools/fonttools/blob/main/LICENSE |
+| PyYAML | `skills/maquetacion-editorial/scripts/configuracion.py` (optional) | MIT | https://github.com/yaml/pyyaml/blob/main/LICENSE |
+| Typst | compiles the documents produced with `skills/maquetacion-editorial/typst/editorial.typ` | Apache License 2.0 | https://github.com/typst/typst/blob/main/LICENSE |
+
+PyMuPDF and MuPDF are available under the GNU AGPL 3.0 or under a commercial
+license from Artifex, the exclusive commercial licensing agent for MuPDF.
+Check which of the two fits your use before installing it, or obtain the
+commercial license from Artifex.
+
+Fonts are not distributed with this repository. A document uses the fonts the
+user has installed or the ones Typst ships with, and each font keeps its own
+license; the project configuration takes a free-form license note per family
+(`licencias`).

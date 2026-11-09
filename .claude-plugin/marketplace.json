@@ -1,0 +1,22 @@
+{
+  "name": "photo-editorial-skills",
+  "description": "Editorial layout skills for photographic documents, written in Spanish.",
+  "owner": {
+    "name": "Jesús Ramos Martín"
+  },
+  "plugins": [
+    {
+      "name": "photo-editorial-skills",
+      "source": "./",
+      "description": "Editorial layout skills for photographic documents in Typst: dossier, portfolio, photobook and exhibition materials.",
+      "category": "design",
+      "tags": [
+        "typst",
+        "editorial-design",
+        "photography",
+        "layout",
+        "pdf"
+      ]
+    }
+  ]
+}
