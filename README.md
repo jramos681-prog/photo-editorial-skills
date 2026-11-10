@@ -69,7 +69,7 @@ pip install pymupdf pillow fonttools pyyaml
 
 ### Manual install
 
-Copy the `skills/maquetacion-editorial` folder into your agent's skills directory: for example, `.claude/skills/` inside the project, or `~/.claude/skills/` across all projects.
+Copy the `skills/maquetacion-editorial` folder into your agent's skills directory: for example, `.claude/skills/` or `~/.claude/skills/` for Claude Code, and `.agents/skills/` or `~/.agents/skills/` for Codex and other agents that read the same folder.
 
 ## Configuration
 
